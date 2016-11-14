@@ -1,0 +1,17 @@
+.search-content{
+    margin: 0 20px;
+    ul.tabs{
+        height: 60px;
+        padding-top: 6px;
+        border-bottom: 1px solid $lilly-red-lust;
+        div.indicator{
+            background-color: $lilly-red-lust;
+            height: 3px;
+        }
+        li.tab{
+            a{
+               color: $lilly-red-lust; 
+            }
+        }
+    }
+}
