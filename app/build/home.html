@@ -220,18 +220,24 @@
             <div class="collapsible-body filter-container" data-collapsible="accordion" id="question-body">
               <div class="no-margin">
                 <ul class="collapsible region-box"  id="region-box">
-                  <li class="ques-content ques-header">
+                  <li class="ques-content ques-header mob-wide">
                     <div class="collapsible-header auto-height desktop-pointer-none">
                       <div class="ques-content-head">
                         Region
                       </div>
                     </div>
                     <div class="collapsible-body border-none" id="filter-region">
-                        <select class="browser-default select-opt" size="5">
+                        <select class="browser-default no-show-phone select-opt" size="5">
                           <option class="ques-content-odd" value="0">Any Region</option>
                           <option class="ques-content-even" value="1">ACE</option>
                           <option class="ques-content-odd" value="2">AMBU</option>
                           <option class="ques-content-even" value="3">GLOBAL</option>
+                        </select>
+                        <select class="browser-default opt-height">
+                          <option class="ques-content-odd" value="0">Any Region1</option>
+                          <option class="ques-content-even" value="1">ACE1</option>
+                          <option class="ques-content-odd" value="2">AMBU1</option>
+                          <option class="ques-content-even" value="3">GLOBAL1</option>
                         </select>
                     </div>
                   </li>
@@ -239,7 +245,7 @@
               </div>
               <div class="no-margin">
                 <ul class="collapsible region-box" data-collapsible="accordion" id="category-box">
-                  <li class="ques-content ques-header">
+                  <li class="ques-content ques-header mob-wide">
                     <div class="collapsible-header auto-height desktop-pointer-none">
                       <div class="ques-content-head">
                         Categories
@@ -259,7 +265,7 @@
               </div>
               <div class="no-margin">
                 <ul class="collapsible region-box datebox" data-collapsible="accordion" id="date-box">
-                  <li class="ques-content ques-header">
+                  <li class="ques-content ques-header mob-wide">
                     <div class="collapsible-header auto-height desktop-pointer-none">
                       <div class="ques-content-head">
                         Modified Date
@@ -267,9 +273,9 @@
                     </div>
                     <div class="collapsible-body border-none" id="filter-date">
                           <ul class="region-box datebox">
-                            <li class="ques-content-odd date-parent" id="date">Any modified Date</li>
-                            <li class="ques-content-even date-parent" > 
-                              <input class="datepicker" type="text" value="Select Date" id="selectdate">
+                            <li class="ques-content-odd date-parent mob-wide" id="date">Any modified Date</li>
+                            <li class="ques-content-even date-parent mob-wide" > 
+                              <input class="datepicker mob-wide" type="text" value="Select Date" id="selectdate">
                             </li> 
         
                           </ul>
