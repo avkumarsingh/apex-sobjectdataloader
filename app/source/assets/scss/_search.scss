@@ -45,9 +45,11 @@ div.mob-landing{
             @include border-radius(100px);
             height: 48px;
             border: 2px solid $lilly-white;
+            padding: 0;
             span{
                 position: relative;
                 bottom: 3px;
+                padding: 0 30px;
                 
             }
         }
