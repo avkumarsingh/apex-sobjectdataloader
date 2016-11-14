@@ -1,0 +1,58 @@
+<div class="select-type">
+	<p>
+		<a href="javascript:void(0);" class="btn active">Sale Ads</a>
+		<a href="javascript:void(0);" class="btn">Want Ads</a>
+	</p>
+</div>
+<div class="row">
+	<div class="row ad-filter">
+		<p class="col sort-control">
+			<a href="javascript:void(0);" class="active select-view-grid"><i class="material-icons">apps</i></a>
+			<a href="javascript:void(0);" class="select-view-list"><i class="material-icons">list</i></a>
+		</p>
+		<p class="col right filter-control">
+			<a class=""><i class="material-icons">filter_list</i><span class="right-align">Filter</span></a>
+		</p>
+	</div>
+	<div class="row ad-sort">
+		<div class="input-field dropdown col s12 m5 l4">
+			<label>Sort By:</label>
+			<select>
+				{{!-- <option value="" disabled selected>Sort By</option> --}}
+			<option value="1">Latest Ad</option>
+			<option value="2">Recommended Ads</option>
+			<option value="3">Latest Viewed Ads</option>
+
+			</select>
+  		</div>
+		<div class="input-field dropdown col s12 m5 l5 filter hide">
+			<label>Price Range:</label>
+			<select>
+				<option value="" disabled selected>Select</option>
+				<option value="1">Low to High price</option>
+				<option value="2">High to Low price</option>
+			</select>
+		</div>
+	</div>
+	<div class="row ad-info">
+
+		<p class="col right slider-control">
+		<span> 1-7 of 7 </span>
+		 <button class="slider-left btn btn-prop slick-arrow" style="display: inline-block;"><i class="material-icons">first_page</i></button>
+                        <button class="slider-left btn btn-prop slick-arrow" style="display: inline-block;"><i class="material-icons">keyboard_arrow_left</i></button>
+                        <button class="slider-right btn btn-prop slick-arrow" style="display: inline-block;"><i class="material-icons">keyboard_arrow_right</i></button>
+                        <button class="slider-left btn btn-prop slick-arrow" style="display: inline-block;"><i class="material-icons">last_page</i></button>
+                    </p>
+	</div>
+	<div class="simpleview">
+			{{#each auto-collector-cars.cards}}
+				{{> productCard data=this.data}}
+			{{/each}}
+	</div>
+
+	<div class="listview hide">
+			{{#each auto-collector-cars.cards}}
+				{{> productCard-listview data=this.data}}
+			{{/each}}
+	</div>
+</div>

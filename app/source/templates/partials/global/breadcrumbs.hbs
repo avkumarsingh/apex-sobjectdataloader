@@ -1,0 +1,20 @@
+<div class="breadcrumbs row">
+    <h1 class="title col s12">
+        <span class="left">{{this.title}}</span>
+        <i class="left material-icons">star</i>
+    </h1>
+    <nav class="col s12">
+        <div class="row nav-wrapper">
+            <div class="col s12">
+                {{#each this.breadcrumbItems}}
+                    {{#if this.active}}
+                        <a href="#!" class="breadcrumb active">{{this.title}}</a>
+                    {{/if}}
+                    {{#unless this.active}}
+                        <a href="#!" class="breadcrumb">{{this.title}}</a>
+                    {{/unless}}
+                {{/each}}
+            </div>
+        </div>
+    </nav>
+</div>

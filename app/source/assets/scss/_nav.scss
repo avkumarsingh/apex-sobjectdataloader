@@ -1,0 +1,180 @@
+.body{
+	font-size:16px;
+}
+
+.nav-container{
+	background-color: $lilly-white;
+	height:80px;
+}
+
+.no-shadow{
+	box-shadow: none;
+}
+
+.head-container{
+	margin-left: 8%;
+	margin-right: 6%
+}
+
+.link-text{
+	color:$lilly-red-lust;
+	font-size: 20px;
+	font-family: Dinpro Regular;
+}
+
+.user-name :hover{
+	background-color: $lilly-white;
+}
+
+.numberCircle {
+    border-radius: 50%;
+    width: 1.1em;
+    height: 1.1em;
+    padding: 0.05em;
+    color: $lilly-white;
+    text-align: center;
+    font: 17px Dinpro Regular;
+    background-color:$lilly-red-lust;
+    display: inline-block;
+    margin-left: 5px
+}
+
+.left-container{
+	float:left;
+	width: 50%;
+	height:80px;
+}
+
+.right-container{
+	float: right;
+	height: 80px;
+	width: 28%;
+}
+
+.logo-lilly-icon{
+    height: 60px;
+    
+    
+    float:left;
+}
+
+.lilly-welcome-xs{
+	display:none;
+}
+
+.lilly-welcome{
+	font-family: DIN-Alternate;
+	color:$lilly-grey;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.lilly-welcome-name{
+	font-family: Dinpro Regular;
+	color:$lilly-dark-grey;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.user-icon{
+	background-image: url(../images/user-icon.png);
+    width:57px;
+    height:57px;
+    background-repeat: no-repeat;
+}
+
+.opacity{
+	opacity: 0.3;
+}
+@media(max-width: 600px){
+	.lilly-welcome {
+		font-size: 2.5vw;
+	}
+}
+@media(max-width: 768px){
+	.link-alt-color-odd{
+		background-color: $lilly-alt-row-odd !important
+	}
+	.left-container{
+		width: 72%;
+	}
+	.link-alt-color-even{
+		background-color: $lilly-alt-row-even !important
+	}
+
+	.logo-lilly-icon{
+		width:60px;
+		height:60px;
+		
+		display: block;
+		height: auto;
+		margin-right: 10px
+	}
+
+	.lilly-welcome{
+		
+	}
+
+	.lilly-welcome-xs{
+		font-family: Dinpro Regular;color: $lilly-black;
+		font-size: 27px;
+		display:inline-block;
+	}
+
+	.user-name{
+		display:none;
+	}
+
+	.u-name{
+		display: none;
+	}
+
+	.welcome-user{
+		margin-top: 0px
+	}
+
+	.head-container{
+		margin-left: 3%;
+		margin-right: 3%
+	}
+
+}
+@media(min-width: 992px){
+	.link-active{
+		border-bottom: 6px solid $lilly-red-lust;
+		padding-bottom: 8px
+	}
+
+	.logo-lilly-icon{
+		width: 60px;
+        height: 60px
+	}
+
+	.lilly-welcome-xs{
+		display:none;
+	}
+	.lilly-welcome{
+		font-size: 16px
+	}
+}
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 992px){
+	.lilly-welcome{
+		font-size:11px;
+	}
+
+	.lilly-welcome-xs{
+		display:none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
