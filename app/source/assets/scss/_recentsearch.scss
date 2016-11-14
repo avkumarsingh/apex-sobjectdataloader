@@ -4,6 +4,10 @@
     margin-top: 3%;
 }
 
+.opt-height{
+    display: none !important;
+}
+
 .link-elem{
     padding:0 !important;
 }
@@ -314,10 +318,6 @@
     overflow-x: hidden;
 }
 
-.opt-height{
-    display: none !important;
-}
-
 @media(min-width: 1024px){
       .high-grid{
         padding-top: 0;
@@ -380,12 +380,8 @@
     .select-opt{
         height: 40px !important;
     }
-    .no-show-phone{
-        display: none !important;
-    }
-    .opt-height{
-        display: block !important;
-    }
+    
+    
     
     .desktop-pointer-none{
         pointer-events: visible !important;
