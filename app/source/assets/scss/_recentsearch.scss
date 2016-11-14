@@ -70,7 +70,11 @@
         font-size: 14px;
         letter-spacing: 0.2px;
     }
-}  
+} 
+    div.filter-btn{
+        font-family: Dinpro Regular;
+    }
+    
 }
 
 
@@ -118,7 +122,6 @@
         color:$lilly-dark-grey;
         cursor: pointer;
         padding-left: 3%;
-        height:60px;
         span{
              font-size: 14px;
             font-family: Whitney-Medium;
@@ -235,13 +238,12 @@
 
 .btn-cancel{
     background-color: $lilly-peech;
-    line-height: 30px;
+    height: 30px;
+    line-height: 36px;
     width:115px;
     vertical-align: middle;
     padding: 0;
     border: 0;
-    background-repeat: no-repeat;
-    background-position: 5px 10px;
     border: 1px solid $lilly-peech !important;
     font-family: Whitney-Medium;
     -moz-border-radius: 100px / 50px;
@@ -255,8 +257,9 @@
 
 .btn-submit{
     background-color: $lilly-green;
-    line-height: 30px;
+    height: 30px;
     width:115px;
+    line-height: 36px;
     vertical-align: middle;
     padding: 0;
     border: 0;
@@ -299,14 +302,11 @@
 }
 
 .filter-txt{
-    padding: 8px;
     white-space: nowrap;
-    text-overflow: ellipsis;
     overflow: hidden;
-    font-size: 18px;
+    font-size: 24px;
     letter-spacing: 0.3px;
     opacity: 0.8;
-    font-family: Whitney-Medium;
 }
 
 .filter-cross-img{
