@@ -2,6 +2,16 @@
     height:49px;
     background-color: $lilly-white;
     margin-top: 3%;
+    .tabs{
+        .tab{
+            a{
+                color: $lilly-dark-black !important;
+                font-family: Dinpro Regular !important;
+                font-size: 20px;
+                
+            }
+        }
+    }
 }
 
 .opt-height{
@@ -9,6 +19,7 @@
 }
 
 .link-elem{
+    
     padding:0 !important;
 }
 
@@ -37,19 +48,32 @@
    border: solid;
 }
 
-.question-head{
+.collapsible-header{
+  .question-head{
+    p{
+        margin: 0;
+        display: inline;
+        
+        span{
+           font-family: Whitney-Light; 
+            font-size: 20px;
+        }
+    }
     color: $lilly-white !important;
-    font-family: Whitney-Medium;
+    
     margin-bottom: 0px;
     letter-spacing: 0.3px;  
-    font-size: 20px;
+    
     background-color: $lilly-peech;
+    .recently-asked{
+        opacity: 0.8;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+    }
+}  
 }
-.recently-asked{
-    opacity: 0.8;
-    font-size: 14px;
-    letter-spacing: 0.2px;
-}
+
+
 
 .ques-content-odd{
     background-color: $lilly-alt-row-odd;
@@ -90,12 +114,17 @@
 
 
 .collapsible-header{
-    color:$lilly-dark-grey;
-    cursor: pointer;
-    padding-left: 3%;
-    height:60px;
-    font-size: 14px;
-    font-family: Whitney-Medium;
+    div{
+        color:$lilly-dark-grey;
+        cursor: pointer;
+        padding-left: 3%;
+        height:60px;
+        span{
+             font-size: 14px;
+            font-family: Whitney-Medium;
+        }
+    }
+   
 }
 .collapsible-body{
     color:$lilly-peech;
@@ -118,7 +147,7 @@
     background-color: $lilly-alt-row-odd;
     background-position:right;
     pointer-events: none;
-    background-position-x:calc(100% - 20px);
+    padding-left: 24px;
 }
 
 .item-inner-even {
@@ -173,13 +202,13 @@
     margin-top: 0;
 }
 
-.tab-link{
+/*.tab-link{
     color: $lilly-dark-black !important;
     font-family: Whitney-Medium;
     font-size: 20px;
     letter-spacing: 0.3px;
     text-align: center;
-}
+}*/
 
 .indicator{
     background-color: $lilly-peech !important;
@@ -257,11 +286,11 @@
     margin:4px;
     overflow: hidden;
     transition: background-color .1s;
-    max-width: 200px;
     line-height: 10px;
     -moz-border-radius: 100px / 50px;
     -webkit-border-radius: 100px / 50px;
     border-radius: 100px / 80px;
+    height: 24px !important;
 }
 
 .filter-cross{
@@ -283,7 +312,7 @@
 .filter-cross-img{
     background-image: url('../images/cross-filter.png');
     background-repeat: no-repeat;
-    background-position: calc(100% - 10px) calc(100% - 9px); 
+    background-position: 9px 5px;
     width: 25px;
     pointer-events: auto;
 
