@@ -16,6 +16,10 @@
            
         }
     }
+    
+    div#main-banner{
+        margin-top: -61px;
+    }
     .mob-btn-container{
         display: block;
     }
@@ -107,7 +111,29 @@
     
     .info-banner{
         display: none;
-    }   
+    } 
+    
+    
+    #recent-ques-head, #newly-ques-head, #approved-ques-head{
+         .collapsible-header{
+            div.tab-link{
+                text-align: center;
+                span{
+                    font-size: 20px; 
+                    color: #000;
+                }
+            }
+        }
+        
+        .active{
+            div.tab-link{
+                border-bottom: 5px solid $lilly-peech;
+                margin-bottom: 5px;
+            }
+        }
+    }
+    
+   
     
     
    
@@ -119,6 +145,9 @@
     }
     .push-down-button{
         display: none !important;
+    }
+    div#main-banner{
+        margin-top: 0;
     }
     
      .info-banner{
@@ -151,6 +180,9 @@
 }
 
 @media only screen and (min-width : 481px) and (max-width : 1024px) and (orientation:landscape){
+    .request-btns-dt{
+        display: none !important;
+    }
       .index-banner {
         .info-banner {
             font-family: Whitney-Light !important;

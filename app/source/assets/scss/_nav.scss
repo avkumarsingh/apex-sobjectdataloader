@@ -89,8 +89,33 @@
 	.lilly-welcome {
 		font-size: 2.4vw;
 	}
+	.u-name{
+		display: none;
+	}
+	.user-name{
+		display:none;
+	}
+}
+
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) {
+  	.u-name{
+		display: none;
+	}
+	.user-name{
+		display:none;
+	}
+
 }
 @media(max-width: 768px){
+	.u-name{
+		display: none;
+	}
+	.user-name{
+		display:none;
+	}
 	.link-alt-color-odd{
 		background-color: $lilly-alt-row-odd !important
 	}
@@ -120,13 +145,9 @@
 		display:inline-block;
 	}
 
-	.user-name{
-		display:none;
-	}
+	
 
-	.u-name{
-		display: none;
-	}
+	
 
 	.welcome-user{
 		margin-top: 0px

@@ -50,27 +50,27 @@
 
 .collapsible-header{
   .question-head{
-    p{
-        margin: 0;
-        display: inline;
-        
-        span{
-           font-family: Whitney-Light; 
-            font-size: 20px;
+        p{
+            margin: 0;
+            display: inline;
+
+            span{
+               font-family: Whitney-Light; 
+                font-size: 20px;
+            }
         }
-    }
-    color: $lilly-white !important;
-    
-    margin-bottom: 0px;
-    letter-spacing: 0.3px;  
-    
-    background-color: $lilly-peech;
-    .recently-asked{
-        opacity: 0.8;
-        font-size: 14px;
-        letter-spacing: 0.2px;
-    }
-} 
+        color: $lilly-white !important;
+
+        margin-bottom: 0px;
+        letter-spacing: 0.3px;  
+
+        background-color: $lilly-peech;
+        .recently-asked{
+            opacity: 0.8;
+            font-size: 14px;
+            letter-spacing: 0.2px;
+        }
+    } 
     div.filter-btn{
         font-family: Dinpro Regular;
     }
@@ -241,7 +241,7 @@
 .btn-cancel{
     background-color: $lilly-peech;
     height: 30px;
-    line-height: 36px;
+    line-height: 28px;
     width:115px;
     vertical-align: middle;
     padding: 0;
@@ -261,7 +261,7 @@
     background-color: $lilly-green;
     height: 30px;
     width:115px;
-    line-height: 36px;
+    line-height: 28px;
     vertical-align: middle;
     padding: 0;
     border: 0;
@@ -369,6 +369,9 @@ and (orientation : landscape) {
     #region-box, #category-box, #date-box{
         height: 100% !important;
     }
+    .desktop-pointer-none{
+        pointer-events: none !important;
+    } 
 }
 
 @media only screen 
@@ -385,6 +388,9 @@ and (orientation : portrait) {
     .region-box{
         height: 204px !important;
         width: 250px !important;
+    }
+    .u-name, .user-name{
+        display: block !important;
     }
  }
 
@@ -455,11 +461,6 @@ and (orientation : portrait) {
         height: 40px !important;
     }
     
-    
-    
-    .desktop-pointer-none{
-        pointer-events: visible !important;
-    } 
     
   }
   @media(min-width: 992px){
