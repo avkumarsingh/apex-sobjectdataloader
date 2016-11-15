@@ -146,18 +146,18 @@
     
     
     <nav class="container link-container no-shadow">
-       <ul class="col s12 m12 l12 tabs hide-on-med-and-down">
+       <ul class="col s12 m12 l12 tabs hide-on-med-and-down" id="all-large">
           <li class="col s12 tab"><a class=" tab-link" href="#recent">Recent Searches  (20)</a></li>
           <li class="col s12 tab"><a class="tab-link" href="#newlyadded">Newly Added</a></li>
           <li class="col s12 tab"><a class="tab-link" href="#approved">Approved</a></li>
       </ul>
-       <ul class=" hide-on-large-only collapsible">
+       <ul class=" hide-on-large-only collapsible" id="small-mobile">
           <li class="col s12">
             <ul class="collapsible  col l12 m12 s12" data-collapsible="accordion">
               <li class="ques-content" id="recent-ques-head">
                 <div class="no-padding collapsible-header tabular" id="recent-searches-head">
                   <div class="right filter-img">
-                    <img class="down">
+                    <span class="down"></span>
                   </div>
                   <div class="tab-link">
                       <span>Recent Searches</span>
@@ -174,7 +174,7 @@
               <li class="ques-content" id="recent-ques-head">
                 <div class="no-padding collapsible-header tabular" id="newly-added-head">
                   <div class="right filter-img">
-                    <img class="down">
+                    <span class="down"></span>
                   </div>
                   <div class="tab-link">
                       <span>Newly Added</span>
@@ -189,9 +189,9 @@
           <li class="col s12">
             <ul class="collapsible  col l12 m12 s12" data-collapsible="accordion">
               <li class="ques-content" id="recent-ques-head">
-                <div class="no-padding collapsible-header tabular" id="newly-added-head">
+                <div class="no-padding collapsible-header tabular" id="all-approved-head">
                   <div class="right filter-img">
-                    <img class="down">
+                    <span class="down"></span>
                   </div>
                   <div class="tab-link">
                       <span>All approved</span>
@@ -252,12 +252,19 @@
                       </div>
                     </div>
                     <div class="collapsible-body border-none" id="filter-category">
-                      <select class="browser-default select-opt" size="5">
+                      <select class="browser-default no-show-phone select-opt" size="5">
                           <option class="ques-content-odd" value="0">Any Category</option>
                           <option class="ques-content-even" value="1">Other</option>
                           <option class="ques-content-odd" value="2">Efficacy</option>
                           <option class="ques-content-even" value="3">Safety</option>
                           <option class="ques-content-even" value="3">Quality</option>
+                      </select>
+                      <select class="browser-default opt-height">
+                          <option class="ques-content-odd" value="0">Any Category1</option>
+                          <option class="ques-content-even" value="1">Other1</option>
+                          <option class="ques-content-odd" value="2">Efficacy1</option>
+                          <option class="ques-content-even" value="3">Safety1</option>
+                          <option class="ques-content-even" value="3">Quality1</option>
                       </select>
                     </div>
                   </li>

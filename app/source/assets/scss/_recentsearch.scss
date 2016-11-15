@@ -232,6 +232,8 @@
         input{
             font-family: Dinpro Regular;
             font-size: 16px;
+            width: 100%;
+            text-align: center;
         }
     }
 }
@@ -303,7 +305,6 @@
 
 .filter-txt{
     white-space: nowrap;
-    overflow: hidden;
     font-size: 24px;
     letter-spacing: 0.3px;
     opacity: 0.8;
@@ -347,6 +348,46 @@
     overflow-x: hidden;
 }
 
+.datebox{
+    overflow: hidden;
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) { 
+    /* STYLES GO HERE IPAD Landscape only */
+    .select-opt{
+        display: none !important;
+    }
+    .opt-height{
+        display: block !important;
+    }
+    .region-box{
+        height: 100% !important;
+    }
+    #region-box, #category-box, #date-box{
+        height: 100% !important;
+    }
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+    /* STYLES GO HERE for Ipad potrait only*/
+    #all-large{
+        display: none !important;
+    }
+    #small-mobile{
+        display: block !important;
+    }
+    .region-box{
+        height: 204px !important;
+        width: 250px !important;
+    }
+ }
+
 @media(min-width: 1024px){
       .high-grid{
         padding-top: 0;
@@ -354,6 +395,10 @@
     .desktop-pointer-none{
         pointer-events: none;
     }  
+    .region-box{
+        height: 204px !important;
+        width: 250px !important;
+    }
 }
 
 @media(max-width: 600px){
@@ -445,11 +490,19 @@
 }  
 
 .down{
-    content:url("../images/dropdown.png");
+    background-image:url("../images/dropdown.png");
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
 }
 
 .up{
-    content:url("../images/icon-up.png");
+    background-image:url("../images/icon-up.png");
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
 }
 
 .transdown{
@@ -483,7 +536,6 @@ nav ul li.active{
     width: 100%;
 }
 input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea{
-    padding-left: 33% ;
     margin-bottom: 0 !important;
     font-size: 20px;
 }

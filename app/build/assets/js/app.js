@@ -84,7 +84,7 @@ var Helper = (function () {
         });*/
         
         $('.collapsible #question-head').click(function(){
-            if($(window).width()>1024){
+            if($(window).width()>=1024){
                 $('.collapsible-body #filter-category').css('display','block');
                 $('.collapsible-body #filter-region').css('display','block');
                 $('.collapsible-body #filter-date').css('display','block');
@@ -92,7 +92,7 @@ var Helper = (function () {
         });
         
         $('#recent-searches-head').click(function(){
-            $('.down').toggleClass('up');    
+            $(this).find('.down').toggleClass('up'); 
             $('#recent-ques-head #recent-searches-body').replaceWith($('#recent'));
             if($('#recent').css('display') == 'none'){
                 $('#recent').css('display','block');
@@ -102,6 +102,10 @@ var Helper = (function () {
             }
             
         });
+
+        $('#newly-added-head, #all-approved-head').click(function(){
+            $(this).find('.down').toggleClass('up'); 
+        })
         $('.question-result').click(function(){
             if(!$(this).parent().siblings().find('.transdown').is('.transup') == false){
                 $(this).parent().siblings().find('.transup').removeClass('transup')
